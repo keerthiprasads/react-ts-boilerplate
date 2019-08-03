@@ -1,0 +1,27 @@
+{
+ 
+  "plugins": ["react", "@typescript-eslint", "prettier",],
+  "env": {
+    "browser": true,
+    "jasmine": true,
+    "jest": true,
+  },
+  "extends": [
+    "eslint:recommended",
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+      },
+    ]
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect",
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+}
